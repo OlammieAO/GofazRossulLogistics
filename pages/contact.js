@@ -49,7 +49,7 @@ function Contact()
                 <div className="contact-modal">
                   <div className="background-main-color">
                     <div className="padding-30px">
-                      <h3 className="padding-bottom-15px">24/7 Online Availability To Serve You... Tell Us</h3>
+                      <h3 className="padding-bottom-15px"><u>24/7 Online Availability To Serve You... Tell Us</u></h3>
                      <ReachUsComponent />
                     </div>
                   </div>

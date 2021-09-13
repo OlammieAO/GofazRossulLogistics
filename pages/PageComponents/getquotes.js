@@ -46,7 +46,7 @@ const validationSchema = Yup.object({
               
               <div className="col-lg-7">
                 <div className="padding-30px">
-                  <h3 className="padding-bottom-15px">Get A Free Quote</h3>
+                  <h3 className="padding-bottom-15px"><u>Get A Free Quote</u></h3>
                   <Formik 
             initialValues = {initialValues}
             validationSchema = {validationSchema}

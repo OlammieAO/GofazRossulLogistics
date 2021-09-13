@@ -1538,7 +1538,8 @@ a.action-bottom:hover {
   color: darkgreen;
   width: 490px;
   height: 30px;
-  border-radius: 15px;  
+  border-radius: 15px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 .contact-modal .form-controlquoteselect {
@@ -1546,6 +1547,7 @@ a.action-bottom:hover {
   width: 390px;
   height: 30px;
   border-radius: 15px;  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .contact-modal form input,
 .contact-modal form textarea {
@@ -2156,6 +2158,12 @@ h2 {
   line-height: 28px;
 }
 
+/* .h2.homeservice {
+  font-size: 53px;
+  line-height: 28px;
+  color: darkgreen;
+} */
+
 .h3,
 h3 {
   font-size: 20px;
@@ -2168,6 +2176,12 @@ h4 {
   font-size: 27px;
   line-height: 21px;
   color:darkgreen;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h4.h4small {
+  font-size: 15px;
+  line-height: 21px;
+  color:white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

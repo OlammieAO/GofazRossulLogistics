@@ -32,12 +32,14 @@ function About()
             <div className="row">
               <div className="col-lg-6 sm-mb-45px">
                 <div className="section-title-right text-main-color clearfix">
-                  <div className="icon"><img src="assets/icons/title-icon-1.png" alt="" /></div>
-                  <h2 className="title-text">Who We Are at Gofaz Rossul Logistics?</h2>
+                  <div className="icon">
+                    <img src="assets/img/gofaz-logo.jpg" alt="" />
+                    </div>
+                  <h2 className="title-text"></h2>
                 </div>
                 <div className="about-text margin-tb-25px">
                   <h4>9 years of experience in Logistics services</h4>
-                  Gofaz Rossul is specialized in cargo, sea, package delivery and goods/items pickup at store, shopping mall, supermarket or factory in Dubai-U.A.E and send it down to the destination. We handle freight, custom clearance and door-to-door delivery of your goods/items. We have partners in logistics business across Asia continent especially in China. We can get a sample item and deliver it to factory on our customers behalf for production. <br/><br/>
+                  <strong>Gofaz Rossul</strong> is specialized in cargo, sea, package delivery and goods/items pickup at store, shopping mall, supermarket or factory in <strong>Dubai-U.A.E</strong> or <strong>Nigeria</strong> and export/transport it down to the destination of your choice. We handle freight, custom clearance and door-to-door delivery of your goods/items. We have partners in logistics business across Asia continent especially in China. We can get a sample item and deliver it to factory on our customers behalf for production. <br/><br/>
 
                   Customers satisfaction and assurance of safe delivery is our business traits as we know that we make money only when you make money. We are available to be reached across different channels of communication as we handle your cargo, sea or package delivery service. You can as well track your package in order to know the status of our logistics processing on your cargo, sea shipment or package delivery.
                 </div>
@@ -57,28 +59,28 @@ function About()
           <div className="container">
             <div className="row">
               <div className="col-lg-7 padding-tb-15px">
-                <h2>Unbeatable Cargo, Sea Shipment and Package Delivery Services</h2>
-                <div className="text">Sit back and relax while we handle your Cargo, Sea Shipment and Package Delivery services. You can focus on other aspect of your business while we do the runnings of getting your goods, items or package deliver to you.</div>
+                <h2>Unbeatable Air Cargo, Sea Shipment and Package Delivery Services</h2>
+                <div className="text">Sit back and relax while we handle your Air Cargo, Sea Shipment and Package Delivery services. You can focus on other aspect of your business while we do the logistics of getting your goods, items or package speedily deliver to you.</div>
               </div>
               <div className="col-lg-5">
                 <div className="row">
                   <div className="col-lg-4 col-md-4 sm-mb-45px">
                     <a href="#" className="action-bottom layout-1">
                       <img src="assets/icons/small-icon-1.png" alt="" /> 
-                      <h4>Tell Friend</h4>
+                      <h4 className="h4small">Tell Friend</h4>
                     </a>
                   </div>
                   <div className="col-lg-4 col-md-4 sm-mb-45px">
-                    <a href="#" className="action-bottom layout-1">
+                    <a data-toggle="modal" data-target=".bd-example-modal-lg" href="#" className="action-bottom layout-1">
                       <img src="assets/icons/small-icon-2.png" alt="" /> 
-                      <h4>Write Us</h4>
+                      <h4 className="h4small">Write Us</h4>
                     </a>
                   </div>
                   <div className="col-lg-4 col-md-4">
-                      <Link href='/contact'>
-                    <a href="#" className="action-bottom layout-1">
+                      <Link href='../contact'>
+                    <a href="" className="action-bottom layout-1">
                     <img src="assets/icons/small-icon-3.png" alt="" /> 
-                      <h4>Contact Us</h4>
+                      <h4 className="h4small">Contact Us</h4>
                     </a>
                      </Link>                     
                   </div>

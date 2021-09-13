@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Header from '../Layout/header'
 import Footer from '../Layout/footer'
-import Header from '../Layout/header'
 import TrackingComponent from '../PageComponents/trackingcomponent'
 
 function Track()

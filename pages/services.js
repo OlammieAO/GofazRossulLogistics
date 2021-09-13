@@ -63,7 +63,7 @@ function Services()
                         text={ TEXTS[index % TEXTS.length] }
                         springConfig={ presets.wobbly }
       /></h4>
-                  Gofaz Rossul is specialized in cargo, sea, package delivery and goods/items pickup at store, shopping mall, supermarket or factory in Dubai-U.A.E and send it down to the destination. We handle freight, custom clearance and door-to-door delivery of your goods/items. We have partners in logistics business across Asia continent especially in China. We can get a sample item and deliver it to factory on our customers behalf for production. <br/><br/>
+                  Gofaz Rossul is specialized in cargo, sea container shipping, package delivery and goods/items pickup at store, shopping mall, supermarket or factory in Dubai-U.A.E and send it down to the destination. We handle freight, custom clearance and door-to-door delivery of your goods/items. We have partners in logistics business across Asia continent especially in China. We can get a sample item and deliver it to factory on our customers behalf for production. <br/><br/>
 
                   Customers satisfaction and assurance of safe delivery is our business traits as we know that we make money only when you make money. We are available to be reached across different channels of communication as we handle your cargo, sea or package delivery service. You can as well track your package in order to know the status of our logistics processing on your cargo, sea shipment or package delivery.
                 </div>
@@ -107,7 +107,7 @@ function Services()
                   <GiCommercialAirplane color="darkgreen" size="85px" />
                     </div>
                   <a href="#" className="title h2">Air Freight</a>
-                  <div className="des">We handle the custom clearance of your goods/items when we handle the logistics, you do not have to worry about the custom clearance. We definitely render an affordable services at any point in time.</div>
+                  <div className="des">We handle the custom clearance of your cargo goods/items when we handle the logistics and we try all we can to deliver your goods, you do not have to worry about the custom clearance. We definitely render an affordable services at any point in time.</div>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -128,14 +128,17 @@ function Services()
                   <BiPackage color="darkgreen" size="85px" />
                     
                   </div>
-                  <a href="#" className="title h2">Packaging Storage &amp; Delivery</a>
+                  <a href="#" className="title h2">Package Storage &amp; Delivery</a>
                   <div className="des">You need to deliver a package somewhere but you are too busy to get that done as soon as possible? We got you covered at Gofaz Rossul, we can get your package deliver to the destination at any point in time.</div>
                 </div>
               </div>
             </div>
             <div className="text-center margin-top-35px">
-                <Link href='/contact'>
-        <a href="#" className="nile-bottom md">Contact Us <i className="fa fa-arrow-right" /> </a>
+                <Link href='../contact'>
+        <a href="" className="nile-bottom md">
+          Contact Us 
+          <i className="fa fa-arrow-right" /> 
+          </a>
               </Link>
             </div>
           </div>

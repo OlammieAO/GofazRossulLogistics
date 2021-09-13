@@ -3,6 +3,11 @@ import {useRouter} from 'next/router'
 import GetQuotes from './PageComponents/getquotes'
 import Footer from './Layout/footer'
 import Header from './Layout/header'
+import { FcShipped } from 'react-icons/fc'
+import { GiCommercialAirplane } from 'react-icons/gi'
+import { GiCargoShip } from 'react-icons/gi'
+import { BiPackage } from 'react-icons/bi'
+import TextTransition, { presets } from "react-text-transition";
 
 
 function Home(){
@@ -60,7 +65,7 @@ function Home(){
         >
           {/* MAIN IMAGE */}
           <img
-            src="assets/rslider/assets/cargo2_rs.jpg"
+            src="assets/rslider/assets/cargo4_rs.jpg"
             alt=""
             data-bgposition="center center"
             data-bgfit="cover"
@@ -101,9 +106,9 @@ function Home(){
               fontFamily: "Poppins"
             }}
           >
-            Cargo, Sea Shipping &amp; Package 
-            <br /> Transportation
-            <br /> made easy
+            <h3>Air Cargo, Containers Shipping &amp; Package Delivery 
+            <br /> Goods, Containers and Package Pickup
+            <br /> made easy</h3>
           </div>
           {/* LAYER NR. 2 */}
           <div
@@ -147,7 +152,12 @@ function Home(){
               cursor: "pointer"
             }}
           >
-            Contact Us{" "}
+           <Link href='../contact'>
+        <a href="" className="nile-bottom md">
+          Contact Us 
+          <i className="fa fa-arrow-right" /> 
+          </a>
+              </Link>
           </div>
         </li>
         {/* SLIDE  */}
@@ -177,7 +187,7 @@ function Home(){
         >
           {/* MAIN IMAGE */}
           <img
-            src="assets/rslider/assets/cargo4_rs.jpg"
+            src="assets/rslider/assets/cargo1_rs.jpg"
             alt=""
             data-bgposition="center center"
             data-bgfit="cover"
@@ -218,9 +228,9 @@ function Home(){
               fontFamily: "Poppins"
             }}
           >
-            Goods and items, Packages
-            <br /> items pickup at store or factory
-            <br /> delivery made easy
+            <h3>Goods, Containers, Packages Delivery
+            <br /> Goods and items pickup at store, factory or company
+            <br /> for delivery made easy</h3>
           </div>
           {/* LAYER NR. 4 */}
           <div
@@ -264,7 +274,12 @@ function Home(){
               cursor: "pointer"
             }}
           >
-            Contact Us{" "}
+            <Link href='../contact'>
+        <a href="" className="nile-bottom md">
+          Contact Us 
+          <i className="fa fa-arrow-right" /> 
+          </a>
+              </Link>
           </div>
         </li>
       </ul>
@@ -284,11 +299,11 @@ function Home(){
               <img src="assets/icons/service-light-1.png" alt />
             </div>
             <a href="#" className="title">
-              Road Freight
+              Road Transportation
             </a>
           </div>
           <div className="dis clearfix">
-            Chances are unless you are very lucky you will.
+            Goods/Items and Package local delivery services
           </div>
         </div>
       </div>
@@ -303,7 +318,7 @@ function Home(){
             </a>
           </div>
           <div className="dis clearfix">
-            Chances are unless you are very lucky you will.
+           Air Cargo of goods and package delivery services.
           </div>
         </div>
       </div>
@@ -318,7 +333,7 @@ function Home(){
             </a>
           </div>
           <div className="dis clearfix">
-            Chances are unless you are very lucky you will.
+           Container shipping with custom clearance services.
           </div>
         </div>
       </div>
@@ -331,17 +346,19 @@ function Home(){
         <div className="col-lg-6">
           <div className="section-title-right text-main-color clearfix">
             <div className="icon">
-              <img src="assets/icons/title-icon-1.png" alt />
+             {/* <img src="assets/icons/title-icon-1.png" alt />*/}
+           {/* <GiCommercialAirplane color="darkgreen" size="55px" />*/}
+             <img src="assets/img/gofaz-logo.jpg" alt="" />
             </div>
-            <h2 className="title-text">Who We Are ?</h2>
+            <h2 className="title-text"></h2>
           </div>
           <div className="about-text margin-tb-25px">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris
+          We are specialized in cargo, sea container shipping, package delivery and goods/items pickup at store, shopping mall, supermarket or factory in Dubai-U.A.E and send it down to the destination.
           </div>
-          <a href="#" className="nile-bottom sm">
+          <a href="" className="nile-bottom sm">
+            <Link href='../services'>
             Read More
+            </Link>
           </a>
           <div
             id="accordion"
@@ -357,7 +374,7 @@ function Home(){
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    <i className="fa fa-info-circle" /> Why us ?
+                    <i className="fa fa-info-circle" /> Why <strong>Gofaz Rossul</strong>?
                   </button>
                 </h5>
               </div>
@@ -368,9 +385,7 @@ function Home(){
                 data-parent="#accordion"
               >
                 <div className="card-body">
-                  Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation{" "}
+                  With over 9 years experience in Air Cargo, Sea Shipping and Package Delivery Logistics, we have the understanding and nook and crannies of the business and we understand how customers, importers or exporters feel when their goods, items, containers or package is in delivery process. We wear our customers shoe so we know how it feels. Speed delivery and minute-minute delivery processing are guaranteed. We have as well invested in technology in order to give you 24/7 delivery processing status on your goods, items, containers or package in our possssion. You can easily know the delivery processing status of your goods, items, containers or package by <strong><Link href='../track'><a href="" >TRACKING</a></Link></strong> it using the tracking code we must have given you.{" "}
                 </div>
               </div>
             </div>
@@ -384,7 +399,7 @@ function Home(){
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    <i className="fa fa-truck" /> Explore our Facilities
+                    <i className="fa fa-truck" /> How do I know the status of my goods in delivery process?
                   </button>
                 </h5>
               </div>
@@ -395,9 +410,7 @@ function Home(){
                 data-parent="#accordion"
               >
                 <div className="card-body">
-                  Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation{" "}
+                  We understand how important your goods, items and package is and we realised how much you have hugely invested on it. We have invested in technology in order to communicate the processing status of our esteemed customers. You can <strong><Link href='../track'><a href="" >TRACK</a></Link></strong> the status of delivery process of your goods, items and package in our care and you can as well reach us on the phone numbers displayed on our website here.{" "}
                 </div>
               </div>
             </div>
@@ -411,7 +424,7 @@ function Home(){
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    <i className="fa fa-plane" /> Warehousing Solution
+                    <i className="fa fa-plane" /> Where do you offer goods and containers pickup services?
                   </button>
                 </h5>
               </div>
@@ -422,9 +435,7 @@ function Home(){
                 data-parent="#accordion"
               >
                 <div className="card-body">
-                  Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation{" "}
+                  For now, we can pickup your goods, items, containers and package at companies, factories, stores and shopping mall in <strong>Dubai-U.A.E</strong> and <strong>Nigeria</strong> and we will process the exportation/transportation of the goods, items, containers or package to the destination of your choice. Just contact us and we will handle it for you infallibly.{" "}
                 </div>
               </div>
             </div>
@@ -434,7 +445,7 @@ function Home(){
           <div className="row">
             <div className="col-sm-6">
               <a href="#">
-                <img src="assets/img/cart-2.jpg" alt />
+                <img src="assets/img/cargo_home.jpg" alt />
               </a>
             </div>
             <div className="col-sm-6">
@@ -445,8 +456,7 @@ function Home(){
                 <h2>Air Freight</h2>
                 <hr />
                 <div className="text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
+                  You want your goods, items or package to be speedily delivered? Talk to us.{" "}
                 </div>
               </div>
             </div>
@@ -455,17 +465,16 @@ function Home(){
                 <div className="icon">
                   <img src="assets/icons/service-light-3.png" alt />
                 </div>
-                <h2>Air Freight</h2>
+                <h2>Containers Shipping</h2>
                 <hr />
                 <div className="text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.{" "}
+                  Have you got large quantities of goods or assets in a 20ft/40ft containers? Logistics is our job.{" "}
                 </div>
               </div>
             </div>
             <div className="col-sm-6">
               <a href="#">
-                <img src="assets/img/cart-1.jpg" alt />
+                <img src="assets/img/sea_container.jpg" alt />
               </a>
             </div>
           </div>
@@ -478,10 +487,9 @@ function Home(){
     <div className="container">
       <div className="row">
         <div className="col-lg-7 padding-tb-15px">
-          <h2>Unbeatable Trucking and Transport Services</h2>
+          <h2>Unbeatable Air Cargo, Sea Shipment and Package Delivery Services</h2>
           <div className="text">
-            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
+          Sit back and relax while we handle your Air Cargo, Sea Shipment and Package Delivery services. You can focus on other aspect of your business while we do the logistics of getting your goods, items or package speedily deliver to you.
           </div>
         </div>
         <div className="col-lg-5">
@@ -489,20 +497,22 @@ function Home(){
             <div className="col-lg-4 col-md-4 sm-mb-45px">
               <a href="#" className="action-bottom layout-1">
                 <img src="assets/icons/small-icon-1.png" alt />
-                <h4>Tell Friend</h4>
+                <h4 className="h4small">Tell Friend</h4>
               </a>
             </div>
             <div className="col-lg-4 col-md-4 sm-mb-45px">
-              <a href="#" className="action-bottom layout-1">
-                <img src="assets/icons/small-icon-2.png" alt />
-                <h4>Read More</h4>
-              </a>
+            <a data-toggle="modal" data-target=".bd-example-modal-lg" href="#" className="action-bottom layout-1">
+                      <img src="assets/icons/small-icon-2.png" alt="" /> 
+                      <h4 className="h4small">Write Us</h4>
+                    </a>
             </div>
             <div className="col-lg-4 col-md-4">
-              <a href="#" className="action-bottom layout-1">
-                <img src="assets/icons/small-icon-3.png" alt />
-                <h4>Contact Us</h4>
-              </a>
+            <Link href='../contact'>
+                    <a href="" className="action-bottom layout-1">
+                    <img src="assets/icons/small-icon-3.png" alt="" /> 
+                      <h4 className="h4small">Contact Us</h4>
+                    </a>
+            </Link> 
             </div>
           </div>
         </div>
@@ -518,11 +528,9 @@ function Home(){
             <div className="icon text-main-color">
               <i className="fa fa-truck" />
             </div>
-            <div className="h2">Our Service</div>
+            <div className="h2">Our Services</div>
             <div className="des">
-              In quis luctus dolor. Sed ac libero arcu. Phasellus vulputate
-              ultrices augue, eget feugiat lectus efficitur in. Nulla non
-              pharetra justo. Nunc viverra consectetur bibendum.{" "}
+            We are strictly into Logistics business, our years of experiences in this field set us free from the competition. We are strictly specialised in the following services :{" "}
             </div>
           </div>
         </div>
@@ -532,254 +540,70 @@ function Home(){
         <div className="col-lg-3 col-md-6">
           <div className="service-icon-box">
             <div className="icon">
-              <img src="assets/icons/service-dark-1.png" alt />
+              {/*<img src="assets/icons/service-dark-1.png" alt />*/}
+              <FcShipped size="85px" />
             </div>
             <a href="#" className="title h2">
-              Cargo Transportation
+              Goods, Items and Transportation
             </a>
             <div className="des">
-              Ut elit tellus, luctus nec magna mattis et, pulvinar dapibus lorem
-              leo ultricies et vitae enim.
+            Goods/Item pickup at stores, shopping mall, supermarket or factory here in Dubai-U.A.E and cargo/ship it down to the destination country.
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-6">
           <div className="service-icon-box">
             <div className="icon">
-              <img src="assets/icons/service-dark-2.png" alt />
+              {/*<img src="assets/icons/service-dark-2.png" alt />*/}
+              <GiCommercialAirplane color="darkgreen" size="85px" />
             </div>
             <a href="#" className="title h2">
               Air Freight
             </a>
             <div className="des">
-              Ut elit tellus, luctus nec magna mattis et, pulvinar dapibus lorem
-              leo ultricies et vitae enim.
+            We handle the custom clearance of your cargo goods/items when we handle the logistics and we try all we can to deliver your goods, you do not have to worry about the custom clearance. We definitely render an affordable services at any point in time.
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-6">
           <div className="service-icon-box">
             <div className="icon">
-              <img src="assets/icons/service-dark-3.png" alt />
+             {/* <img src="assets/icons/service-dark-3.png" alt />*/}
+             <GiCargoShip color="darkgreen" size="85px" />
             </div>
             <a href="#" className="title h2">
               Ocean Freight
             </a>
             <div className="des">
-              Ut elit tellus, luctus nec magna mattis et, pulvinar dapibus lorem
-              leo ultricies et vitae enim.
+            We handle the custom clearance of your goods/items when we handle your sea shipment, you do not have to worry about the custom clearance. We definitely render an affordable services at any point in time.
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-6">
           <div className="service-icon-box">
             <div className="icon">
-              <img src="assets/icons/service-dark-4.png" alt />
+             {/* <img src="assets/icons/service-dark-4.png" alt />*/}
+             <BiPackage color="darkgreen" size="85px" />
             </div>
             <a href="#" className="title h2">
-              Packaging &amp; Storage
+              Package Storage &amp; Delivery
             </a>
             <div className="des">
-              Ut elit tellus, luctus nec magna mattis et, pulvinar dapibus lorem
-              leo ultricies et vitae enim.
+            You need to deliver a package somewhere but you are too busy to get that done as soon as possible? We got you covered at Gofaz Rossul, we can get your package deliver to the destination at any point in time.
             </div>
           </div>
         </div>
       </div>
       <div className="text-center">
-        <a href="#" className="nile-bottom md">
-          Show all <i className="fa fa-arrow-right" />{" "}
+        <Link href='../contact'>
+        <a href="" className="nile-bottom md">
+          Contact Us <i className="fa fa-arrow-right" />{" "}
         </a>
+        </Link>
       </div>
     </div>
   </div>
-  <div className="section padding-tb-100px section-ba-2">
-    <div className="container">
-      {/* Title */}
-      <div className="section-title margin-bottom-40px">
-        <div className="row justify-content-center">
-          <div className="col-lg-7">
-            <div className="icon text-main-color">
-              <i className="fa fa-money" />
-            </div>
-            <div className="h2">Our Pricing</div>
-            <div className="des">
-              In quis luctus dolor. Sed ac libero arcu. Phasellus vulputate
-              ultrices augue, eget feugiat lectus efficitur in. Nulla non
-              pharetra justo. Nunc viverra consectetur bibendum.{" "}
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* // End Title */}
-      <div className="row">
-        {/* item */}
-        <div className="col-lg-3 col-md-6">
-          <div className="price-table">
-            <div className="title main-color">BASIC</div>
-            <div className="price">
-              <span>$</span>199
-            </div>
-            <div className="per-mile">PER MILE</div>
-            <ul className="elements">
-              <li>4000 kg load</li>
-              <li>425 kg / pallet </li>
-              <li>Warehousing</li>
-              <li>Free Packaging </li>
-              <li>24/7 support</li>
-            </ul>
-            <div className="padding-25px">
-              <a href="#" className="nile-bottom sm-block">
-                ORDER NOW
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* // end item */}
-        {/* item */}
-        <div className="col-lg-3 col-md-6">
-          <div className="price-table">
-            <div className="title main-color">BASIC</div>
-            <div className="price">
-              <span>$</span>213
-            </div>
-            <div className="per-mile">PER MILE</div>
-            <ul className="elements">
-              <li>4000 kg load</li>
-              <li>425 kg / pallet </li>
-              <li>Warehousing</li>
-              <li>Free Packaging </li>
-              <li>24/7 support</li>
-            </ul>
-            <div className="padding-25px">
-              <a href="#" className="nile-bottom sm-block">
-                ORDER NOW
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* // end item */}
-        {/* item */}
-        <div className="col-lg-3 col-md-6">
-          <div className="price-table active">
-            <div className="title main-color">BASIC</div>
-            <div className="price">
-              <span>$</span>813
-            </div>
-            <div className="per-mile">PER MILE</div>
-            <ul className="elements">
-              <li>4000 kg load</li>
-              <li>425 kg / pallet </li>
-              <li>Warehousing</li>
-              <li>Free Packaging </li>
-              <li>24/7 support</li>
-            </ul>
-            <div className="padding-25px">
-              <a href="#" className="nile-bottom sm-block">
-                ORDER NOW
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* // end item */}
-        {/* item */}
-        <div className="col-lg-3 col-md-6">
-          <div className="price-table">
-            <div className="title main-color">BASIC</div>
-            <div className="price">
-              <span>$</span>650
-            </div>
-            <div className="per-mile">PER MILE</div>
-            <ul className="elements">
-              <li>4000 kg load</li>
-              <li>425 kg / pallet </li>
-              <li>Warehousing</li>
-              <li>Free Packaging </li>
-              <li>24/7 support</li>
-            </ul>
-            <div className="padding-25px">
-              <a href="#" className="nile-bottom sm-block">
-                ORDER NOW
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* // end item */}
-      </div>
-    </div>
-  </div>
-  <div className="section padding-tb-100px section-ba-3">
-    <div className="container">
-      {/* Title */}
-      <div className="section-title margin-bottom-40px">
-        <div className="row justify-content-center">
-          <div className="col-lg-7">
-            <div className="icon text-main-color">
-              <i className="fa fa-bookmark-o" />
-            </div>
-            <div className="h2">Last News</div>
-            <div className="des">
-              In quis luctus dolor. Sed ac libero arcu. Phasellus vulputate
-              ultrices augue, eget feugiat lectus efficitur in. Nulla non
-              pharetra justo. Nunc viverra consectetur bibendum.{" "}
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* // End Title */}
-      <div className="row">
-        <div className="col-lg-4 col-md-6 sm-mb-35px">
-          <div className="blog-item">
-            <div className="img">
-              <a href="#">
-                <img src="assets/img/blog-grid-1.jpg" alt />
-              </a>
-              <a href="#" className="date">
-                <span className="day">15</span>
-                <span className="month">April</span>
-              </a>
-            </div>
-            <a href="#" className="title">
-              Long Don’t Spend Time Beating On A Wall, Hoping To Trans ...
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 sm-mb-35px">
-          <div className="blog-item">
-            <div className="img">
-              <a href="#">
-                <img src="assets/img/blog-grid-2.jpg" alt />
-              </a>
-              <a href="#" className="date">
-                <span className="day">15</span>
-                <span className="month">April</span>
-              </a>
-            </div>
-            <a href="#" className="title">
-              Long Don’t Spend Time Beating On A Wall, Hoping To Trans ...
-            </a>
-          </div>
-        </div>
-        <div className="col-lg-4 col-md-6 sm-mb-35px">
-          <div className="blog-item">
-            <div className="img">
-              <a href="#">
-                <img src="assets/img/blog-grid-3.jpg" alt />
-              </a>
-              <a href="#" className="date">
-                <span className="day">15</span>
-                <span className="month">April</span>
-              </a>
-            </div>
-            <a href="#" className="title">
-              Long Don’t Spend Time Beating On A Wall, Hoping To Trans ...
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+ 
          <Footer />
        
         </>

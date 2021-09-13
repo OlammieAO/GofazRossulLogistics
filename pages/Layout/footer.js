@@ -96,7 +96,7 @@ function Footer()
                             <li><a href="">Privacy Policy</a></li>
                 </Link> 
 
-                <Link href='../termsofuse'>
+                <Link href='../termofuse'>
                             <li><a href="">Terms Of Use</a></li>
                 </Link> 
 
